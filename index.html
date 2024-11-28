@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comics Pi Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">COMICS PI</div>
+    <ul class="nav-links">
+      <li id="home" ><a href="#">Home</a></li>
+      <li id="create"> <a href="#">Create Character</a></li>
+    </ul>
+    <button id="theme-button">Change Theme</button>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="/FrontEnd-Projects/images/1_EkGENsmL2z4w8JeLMSiCPg.jpg" alt="Superhero Image" class="hero-image">
+      <button class="button prev">&lt;</button>
+      <button class="button next">&gt;</button>
+
+    </div>
+  </main>
+
+
+  <div class="superhero-container">
+    <h1 class="title">Superhero Creator</h1>
+
+    <form class="superhero-form">
+      <label class="form-label" for="superhero-name" >Superhero Name:</label>
+      <input class="form-input" type="text" id="superhero-name" placeholder="Enter superhero name" autocomplete="off">
+
+      <label class="form-label" for="superpower">Superpower/Ability:</label>
+      <select class="form-select" id="superpower" autocomplete="off">
+        <option value="">--Select Ability--</option>
+        <option value="Flying">Flying</option>
+        <option value="Invisibility">Invisibility</option>
+        <option value="Time Travel">Time Travel</option>
+      </select>
+
+      <label class="form-label" for="origin-story">Origin Story:</label>
+      <textarea class="form-textarea" id="origin-story" placeholder="Write the superhero's origin story..." autocomplete="off"></textarea>
+
+      <button class="form-button" type="button">Create</button>
+    </form>
+  </div>
+
+
+  <footer>
+    <p>Ⓒ 2024 Malik Johnson - All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
